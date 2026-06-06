@@ -15,5 +15,6 @@ Step 2 :- After completing the installation process of virtual machine , Next we
 
 Step 3 :- Now we need to open Vm ware and click create new virtual Mchine and click next 
 
-Step 4 :- Now select **Installer disc image file (iso)** and browse the Kali iso file <img src="images/Browse_ISO.png" alt="ISO browse image" width="500"/>
+Step 4 :- Now select **Installer disc image file (iso)** and browse the Kali iso file and click next <img src="images/Browse_ISO.png" alt="ISO browse image" width="500"/>
 
+Step 5 :- Now select the oprating System and version . I am select Linux operating System and version Ubantu 64-bit <img src="images/Select_OS.png" alt="SELECT OS AND version" width = "300">
