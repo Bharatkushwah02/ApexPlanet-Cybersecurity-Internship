@@ -15,4 +15,5 @@ Step 2 :- After completing the installation process of virtual machine , Next we
 
 Step 3 :- Now we need to open Vm ware and click create new virtual Mchine and click next 
 
-Step 4 :- Now select **Installer disc image file (iso)** and browse the Kali iso file
+Step 4 :- Now select **Installer disc image file (iso)** and browse the Kali iso file ![ISO browse image](images/Browse_ISO.png)
+
