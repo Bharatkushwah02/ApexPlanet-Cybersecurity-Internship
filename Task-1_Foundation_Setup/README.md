@@ -1,64 +1,120 @@
 # ApexPlanet Internship - Task 1: Foundation & Environment Setup
 
 ## 📌 Objective
-To build strong fundamentals in cybersecurity, networking, and cryptography, and to set up a professional penetration testing laboratory environment.
+Build strong cybersecurity fundamentals and set up a professional Kali Linux lab environment for penetration testing practice.
 
 ---
 
-## 🛠️ 1. Lab Environment Setup Report
+## 🔍 Overview
+This guide explains how to install a Kali Linux virtual machine using VMware or VirtualBox and prepare it for lab use.
 
-### Attacker Machine: Kali Linux
+## ✅ Prerequisites
+- Windows PC with virtualization support enabled
+- VMware Workstation or VirtualBox installed
+- At least 20 GB of free disk space for the Kali VM
+- Internet access to download the Kali Linux ISO
 
-Step 1 :- Install [Vm ware](https://www.vmware.com/info/workstation-pro/evaluation) or [virtual box](https://www.virtualbox.org/) in your windows machine
+## 🧰 Tools Used
+- VMware Workstation or VirtualBox
+- Kali Linux ISO from the official website
 
-Step 2 :- After completing the installation process of virtual machine , Next we download [Kali ios](https://www.kali.org/get-kali/#kali-platforms) file
+## 📝 Steps to Install Kali Linux
 
-Step 3 :- Now we need to open Vm ware and click create new virtual Mchine and click next 
+### 1. Install virtualization software
+1. Install VMware Workstation: https://www.vmware.com/info/workstation-pro/evaluation
+2. Or install VirtualBox: https://www.virtualbox.org/
 
-Step 4 :- Now select **Installer disc image file (iso)** and browse the Kali iso file and click next <img src="images/Browse_ISO.png" alt="ISO browse image" width="300"/>
+### 2. Download Kali Linux ISO
+1. Download the Kali Linux ISO from the official website:
+   - https://www.kali.org/get-kali/#kali-platforms
 
-Step 5 :- Now select the oprating System and version . I am select Linux operating System and version Ubantu 64-bit . Click next. <img src="images/Select_OS.png" alt="SELECT OS AND version" width = "300">
+### 3. Create a new virtual machine
+1. Open VMware (or VirtualBox) and choose **Create a New Virtual Machine**.
+2. Select **Installer disc image file (ISO)** and browse to the Kali Linux ISO.
 
-Step 6:- Enter the name of your machine ad choose the location where you want to give the Space your linux machine and make sure that your disc ( local disck C or D or other )  have sufficent space for better performance . <img src="images/Name_&_Location.png" alt="Enter the Name and location" width = "300">
+   ![Browse ISO](images/Browse_ISO.png)
 
-Step 7: - Enter the size of Disc ( minimum 20GB is required and maximum you give according to your system specification ) <img src="images/Enter disk size.png" alt="ENter the Size " width = "300">
+3. Choose the operating system type:
+   - **Linux**
+   - **Ubuntu 64-bit**
 
-Step 8:- if you want to customize the Hardwer you can or you can simply click next . After the configrution you can aso edit it. Click finish
-<img src="images/Customize.png" alt="Customize or not" width = "300">
+   ![Select OS](images/Select_OS.png)
 
-Step 9:- Now our Machine is ready for start click **power on the virtual machine** <img src="images/Power on.png" alt="power on the machine" width = "300">
+4. Enter a name for the VM and choose the storage location.
+   - Make sure the drive has enough free space.
 
-Step 10 :- Now select Graphical install and press enter 
-<img src="images/select1st.png" alt="Select Graphical install" width = "300">
+   ![Name and Location](images/Name_%26_Location.png)
 
-Step 11 :-  Select your language ( I AM Select english ) and click continue
+5. Assign disk size for the VM.
+   - Minimum: **20 GB**
+   - Increase if your system allows it.
 
-Step 12 :- Select your location and click continue
+   ![Enter disk size](images/Enter%20disk%20size.png)
 
-Step 13 :- Select your keyboard style and click continue ( I select American english )
+6. Optionally customize hardware settings, or continue with defaults.
 
-Step 14 :- Wait for a couple o minute and Enter the Host name <img src="images/hostname.png" alt="ENter the host name" width = "300">
+   ![Customize hardware](images/Customize.png)
 
-Step 15 :- Enter domain name which you want or simple you can continue
+7. Finish the virtual machine creation.
 
-Step 16 :- Enter the username and click continue.<img src="images/username.png" alt="Enter the username" width = "300">
+### 4. Start the virtual machine
+1. Power on the VM.
+2. Select **Graphical install** and press Enter.
 
-Step 17 :- Enter the username for login and click continue <img src="images/username1.png" alt="Enter the username" width = "300">
+   ![Graphical install](images/select1st.png)
 
-Step 18:- Enter the password and click conttinue <img src="images/Set the password.png" alt="Enter the password" width = "300">
+### 5. Install Kali Linux
+1. Choose your language and click **Continue**.
+2. Select your location and click **Continue**.
+3. Select keyboard layout and click **Continue**.
+4. Enter the hostname for the VM.
 
-Step 19 :- Select your time Zone and click continue
+   ![Hostname](images/hostname.png)
 
-Step 20 :- Now select 1st option **Guidede -  use entire disk** and click continue . Again click continue and continue 3 times <img src="images/partition.png" alt="Guidede -  use entire disk" width = "300">
+5. Enter a domain name or skip this step.
+6. Create a user account and password.
 
-Step 21 :- Now , Select yes and click continue <img src="images/partition2.png" alt="partition 2nd step click yes" width = "300">
+   ![Username](images/username.png)
+   ![Confirm username](images/username1.png)
+   ![Set password](images/Set%20the%20password.png)
 
-Step 22 :- you can Select all the software or you can click continue without any change . Again click continue for display manger = "gdm3"  <img src="images/Software_selection.png" alt="Select software" width = "300">
+7. Select your time zone and click **Continue**.
 
-Step 23 :- After some time click ues for Grub loader And click  aontinue <img src="images/Grub.png" alt="Grub loader" width = "300">
+### 6. Partition the disk
+1. Choose **Guided - use entire disk**.
+2. Continue through the partitioning steps.
 
-Step 24 :-For Grub boot loader select **/dev/sda** and click continue 
+   ![Partition disk](images/partition.png)
 
-Step 25 :- Now it will take some time and now your machine is ready . simply you can enter the username and password and start Hacking.
-<img src="images/Kali Dashboard.png" alt="Kali-Dashboard" width = "300">
+3. Confirm and write changes to disk.
+
+   ![Confirm partition](images/partition2.png)
+
+4. Continue with the default software selection.
+
+   ![Software selection](images/Software_selection.png)
+
+5. When prompted, install the GRUB boot loader.
+
+   ![GRUB loader](images/Grub.png)
+
+6. Select **/dev/sda** for the boot loader location and continue.
+
+### 7. Complete installation
+1. Wait for the installation to finish.
+2. Reboot the VM.
+3. Log in using the username and password created earlier.
+
+   ![Kali Dashboard](images/Kali%20Dashboard.png)
+
+## 📌 Final Notes
+- Use this Kali VM for cybersecurity practice, vulnerability scanning, and penetration testing labs.
+- Keep the VM tools and Kali Linux updated.
+- Do not use this environment for unauthorized activities.
+
+---
+
+## 📂 File Structure
+- `README.md` - this installation guide
+- `images/` - screenshot files used in the guide
 
