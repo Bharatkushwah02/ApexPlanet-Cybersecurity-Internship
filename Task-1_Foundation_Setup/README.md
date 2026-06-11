@@ -163,7 +163,45 @@ This guide covers the complete lab setup process for:
 
 ---
 
+## 🧪 Network Verification & Wireshark Capture
+
+This section shows how to verify connectivity between Kali Linux and Metasploitable2 using Wireshark.
+
+### 1. Start both VMs
+1. Power on the Kali Linux VM.
+2. Power on the Metasploitable2 VM.
+
+### 2. Find the Metasploitable2 IP address
+1. On Metasploitable2, run:
+   - `ifconfig`
+2. Note the IP address and network adapter details.
+
+   ![Metasploitable IP](images/wireshark/IP_address.png)
+
+### 3. Open Wireshark on Kali
+1. Open a terminal in Kali and run:
+   - `wireshark`
+2. Select the same network adapter used by the Kali VM.
+
+   ![Network adapter selection](images/wireshark/Select_network.png)
+
+### 4. Send ping traffic
+1. Open a new terminal in Kali.
+2. Run:
+   - `ping <Metasploitable-IP>`
+
+   ![Ping command](images/wireshark/ping.png)
+
+### 5. Observe packets in Wireshark
+1. In Wireshark, check that ICMP traffic appears.
+2. Confirm the packet flow between Kali and Metasploitable2.
+
+   ![ICMP packets](images/wireshark/ICMP_packets.png)
+
+---
+
 ## 📂 File Structure
 - `README.md` — this installation guide
 - `images/` — screenshots used in the guide
 - `images/Metasploite/` — Metasploitable2 setup screenshots
+- `images/wireshark/` — Wireshark capture screenshots
